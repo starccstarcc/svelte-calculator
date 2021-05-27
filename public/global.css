@@ -1,0 +1,16 @@
+:root {
+  --color-light-blue: #3b4664;
+  --color-dark-blue: #181f32;
+  --color-light-brown: #eae3db;
+  --color-brown: #b2a295;
+  --color-orange: #d13f30;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--color-light-blue);
+}
+
+main {
+  height: 100vh;
+}
