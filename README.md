@@ -1,37 +1,44 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+![calculator screenshot](https://github.com/brunochirelli/svelte-calculator-app/blob/main/screenshot.png?raw=true)
 
 ---
 
-# svelte app
+# Svelte-Calculator-App
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+## Goal
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+The goal of this project was to expand my frontend skills using another JavaScript framework (Svelte) to amplify my toolset.
+
+This project was a challenge from Frontend Mentor. 
+
+Here I try focus on the logic of the app and handle basic operations of a basic calculator.
+
+- Handle components
+- Folder structure
+- Svelte stores
+- Testing with Jest and Testing-Library
+
+
+## Stack
+
+This project use the default template for [Svelte](https://svelte.dev) apps. The framework lives at https://github.com/sveltejs/template.
+
+- Svelte
+- Javascript
+- HTML5, CSS3
+- Node
+- Jest, Testing-Library
+- Vercel (deploy).
+
+## Commands
+
+## Dev
 
 ```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+yarn dev
 ```
+Starts the site in development mode.
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -58,48 +65,6 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 "start": "sirv public --single"
 ```
 
-## Using TypeScript
+## Deploy
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+This app was deployed at Vercel.
