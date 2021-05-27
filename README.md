@@ -1,4 +1,4 @@
-![calculator screenshot](https://github.com/brunochirelli/svelte-calculator-app/blob/main/screenshot.png?raw=true)
+![calculator screenshot](https://github.com/brunochirelli/svelte-calculator-app/blob/main/screenshot.png)
 
 ---
 
