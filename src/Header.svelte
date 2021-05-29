@@ -4,7 +4,7 @@
 
 <div class="calc-header">
   <h1>calc</h1>
-  <!-- <Switcher /> -->
+  <Switcher />
 </div>
 
 <style>
@@ -12,6 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--color-header-text);
   }
 </style>

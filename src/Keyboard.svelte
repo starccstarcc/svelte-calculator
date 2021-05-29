@@ -17,7 +17,7 @@
     gap: 0.8125rem;
     max-height: 33rem;
     padding: 1.625rem;
-    background: #252d44;
+    background: var(--color-keyboard-background);
     border-radius: 0.625rem;
   }
 

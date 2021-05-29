@@ -8,6 +8,7 @@ import isNumber from "../utils/isNumber";
  */
 const initialValue = () => {
   return {
+    theme: "default", //
     display: [],
     controls: [
       { value: 7, class: "" },

@@ -21,10 +21,10 @@
 <style>
   .calc-display {
     padding: 1.625rem;
-    color: white;
+    color: var(--color-display-text);
     font-size: 2.5rem;
     text-align: right;
-    background: var(--color-dark-blue);
+    background: var(--color-display-background);
     border-radius: 0.625rem;
   }
 

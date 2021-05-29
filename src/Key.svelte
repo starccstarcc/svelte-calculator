@@ -21,7 +21,7 @@
     }
 
     if (key === $calculator.operator) {
-      elem.classList.add("active");
+      elem.classList.toggle("active");
     }
 
     updateDisplay(key);
@@ -50,14 +50,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #252d44;
-    font-weight: bolder;
+    color: var(--color-button-text);
     font-size: 1.2rem;
+    font-family: futura-pt, sans-serif;
     text-transform: uppercase;
-    background: var(--color-light-brown);
+    background: var(--color-button-background);
     border-radius: 0.625rem;
-    box-shadow: 0 0.25rem 0 var(--color-brown);
+    box-shadow: 0 0.25rem 0 var(--color-button-shadow);
     user-select: none;
+  }
+
+  @media screen and (min-width: 600px) {
+    .key {
+      font-size: 1.5rem;
+    }
   }
 
   .double {
@@ -66,14 +72,14 @@
 
   .secondary {
     color: white;
-    background: #647299;
-    box-shadow: 0 0.25rem 0 #414e71;
+    background: var(--color-button-alt);
+    box-shadow: 0 0.25rem 0 var(--color-button-alt-shadow);
   }
 
   .result {
     color: white;
-    background: var(--color-orange);
-    box-shadow: 0 0.25rem 0 #8f2316;
+    background: var(--color-button-result);
+    box-shadow: 0 0.25rem 0 var(--color-button-result-shadow);
   }
 
   .key:active,

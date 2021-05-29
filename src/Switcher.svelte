@@ -3,6 +3,25 @@
 
   const handleChange = (e) => {
     step = e.target.value;
+
+    const app = document.querySelector("#app-root");
+
+    app.className = "";
+
+    if (step === "1") {
+      app.classList.add("default");
+      return;
+    }
+
+    if (step === "2") {
+      app.classList.add("midnight");
+      return;
+    }
+
+    if (step === "3") {
+      app.classList.add("canyon");
+      return;
+    }
   };
 </script>
 
@@ -35,7 +54,7 @@
     justify-content: space-between;
     width: 6.25rem;
     height: 2rem;
-    background: var(--color-dark-blue);
+    background: var(--color-switcher-background);
     border-radius: 25px;
   }
 
@@ -45,7 +64,7 @@
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background: var(--color-orange);
+    background: var(--color-switcher-circle);
     border-radius: 50%;
     transform: translateX(0.5rem);
     transition: transform 0.2s ease;

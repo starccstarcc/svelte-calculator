@@ -4,7 +4,7 @@
   import Keyboard from "./Keyboard.svelte";
 </script>
 
-<main>
+<main id="app-root" class="default">
   <div class="calc-root">
     <Header />
 

@@ -1,16 +1,107 @@
 :root {
-  --color-light-blue: #3b4664;
-  --color-dark-blue: #181f32;
-  --color-light-brown: #eae3db;
+  --color-blue-lighter: #414e71;
+  --color-blue-light: #3b4664;
+  --color-blue: #00decf;
+  --color-blue-dark: #181f32;
+  --color-green-sea: #388187;
+  --color-brown-light: #eae3db;
   --color-brown: #b2a295;
-  --color-orange: #d13f30;
+  --color-orange-red: #d13f30;
+  --color-orange-red-dark: #d13f30;
+  --color-orange-red-darker: #992315;
+  --color-orange: #c85401;
+  --color-orange-dark: #c85401;
+  --color-purple-light: #ba14f4;
+  --color-purple: #56077c;
+  --color-purple-dark: #1e0836;
+  --color-purple-darker: #17062a;
+  --color-yellow: #fbe541;
+  --color-gray-light: #e6e6e6;
+  --color-gray-dark: #383832;
+}
+
+/* Themes */
+.default {
+  --color-background: var(--color-blue-light);
+  --color-header-text: var(--color-brown-light);
+
+  --color-main-text: var(----color-brown-light);
+
+  --color-display-background: var(--color-blue-dark);
+  --color-display-text: var(--color-gray-light);
+
+  --color-keyboard-background: var(--color-blue-dark);
+
+  --color-button-background: var(--color-brown-light);
+  --color-button-text: var(--color-blue-dark);
+  --color-button-shadow: var(--color-brown);
+  --color-button-result: var(--color-orange-red);
+  --color-button-result-shadow: var(--color-orange-red-darker);
+  --color-button-alt: #647299;
+  --color-button-alt-shadow: #404e75;
+
+  --color-highlight: var(--color-orange-red);
+
+  --color-switcher-background: var(--color-blue-dark);
+  --color-switcher-circle: var(--color-orange-red);
+}
+
+.midnight {
+  --color-background: var(--color-purple-darker);
+  --color-header-text: var(--color-yellow);
+
+  --color-main-text: var(--color-yellow);
+
+  --color-display-background: var(--color-purple-dark);
+  --color-display-text: var(--color-yellow);
+
+  --color-keyboard-background: var(--color-purple-dark);
+
+  --color-button-result: var(--color-blue);
+  --color-button-result-shadow: #6efaf1;
+  --color-button-background: #331b4d;
+  --color-button-text: var(--color-yellow);
+  --color-button-shadow: #881d9f;
+  --color-button-alt: #56077c;
+  --color-button-alt-shadow: #ba14f4;
+
+  --color-highlight: var(--color-blue);
+  --color-highlight-shadow: #6efaf1;
+
+  --color-switcher-background: #1d0836;
+  --color-switcher-circle: var(--color-blue);
+}
+
+.canyon {
+  --color-background: #e6e6e6;
+  --color-header-text: #383832;
+
+  --color-main-text: #383832;
+
+  --color-display-background: #eeeeee;
+  --color-display-text: #383832;
+
+  --color-keyboard-background: #d3cdcd;
+
+  --color-button-result: var(--color-orange);
+  --color-button-result-shadow: #863600;
+  --color-button-background: #e5e4e0;
+  --color-button-text: #383832;
+  --color-button-shadow: var(--color-brown);
+  --color-button-alt: #388187;
+  --color-button-alt-shadow: #1a5d65;
+
+  --color-switcher-background: #d3cdcd;
+  --color-switcher-circle: var(--color-orange);
 }
 
 body {
-  font-family: sans-serif;
-  background: var(--color-light-blue);
+  font-family: futura-pt, sans-serif;
+  background: var(--color-background);
 }
 
 main {
   height: 100vh;
+  background: var(--color-background);
+  transition: background 0.2s ease;
 }
